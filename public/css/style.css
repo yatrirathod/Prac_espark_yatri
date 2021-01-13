@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: auto;
+  background: url("../images/bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.container{
+  width: 650px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  margin-bottom: 17px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 640px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .ssc{
+  margin: 11px 0;
+  display: flex;
+  position: relative;
+  font-weight: 500;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+  display: flex !important;
+  flex-direction: row !important;
+}
+form .page .test{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .test label {
+  padding-left:10px;
+  padding-right:10px;
+  margin-top:7px;
+  display:block;
+  width: 176px;
+}
+form .page .test input[type="radio"] {
+  margin-top:7px;
+  width: 50px;
+  height: 27px;
+  margin-left: -11px;
+  margin-right: -1px;
+}
+form .page .test .dateformt{
+    margin-left: 13px;
+    margin-right: -60px;
+}
+form .page .test select {
+  margin-top:0px;
+  width: 98px;
+  height: 38px;
+  margin-left: -11px;
+  margin-right: -1px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+form .page .test .state {
+  
+  width: 400px;
+  height: 38px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-weight: 500;
+  padding-left: 7px;
+}
+form .page .test input {
+  margin: 0 0 10px 0;
+  height: 35px;
+  width: 200px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  display:block;
+  margin:0 0 5px
+}
+form .page .educ{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .educ label {
+  padding-left:10px;
+  padding-right:10px;
+  margin-top:7px;
+  display:block;
+  width: 100px;
+}
+form .page .educ input {
+  margin: 0 0 10px 0;
+  height: 35px;
+  width: 100px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  display:block;
+  margin:0 0 5px
+}
+form .page .button {
+  color: white;
+  padding: 11px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 43%;
+}
+form .page .button1 {background-color: #d33f8d;}
+form .page button:hover {
+    background: #000;
+}
+form .page .borderLine{
+  border-bottom: 2px solid black;
+}
+form .page .work{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .work label {
+  padding-left: 4px;
+  padding-right: 46px;
+  margin-top: 7px;
+  display: block;
+  width: 86px;
+}
+form .page .work input {
+  margin: 0 0 10px 0;
+  height: 35px;
+  width: 71px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  display:block;
+  margin:0 0 5px
+}
+form .page .work .dateformt{
+  margin-left: 3px;
+  margin-right: -78px;
+}
+form .page .lang{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .lang label {
+  padding-right: 74px;
+  margin-top: -3px;
+  display: block;
+}
+form .page .lang input[type="checkbox"] {
+  margin: 0 0 10px 0;
+  height: 20px;
+  width: 65px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  display: block;
+}
+form .page .techno{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .techno label {
+  padding-right: 74px;
+  margin-top: -7px;
+  display: block;
+}
+form .page .techno input[type="checkbox"] {
+  margin: 0 0 10px 0;
+  height: 20px;
+  width: 65px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  display: block;
+}
+form .page .techno input[type="radio"] {
+margin-top: -3px;
+width: 31px;
+height: 22px;
+margin-left: -3px;
+margin-right: 4px;
+}
+form .page .refer{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .refer label {
+  padding-left: 4px;
+  padding-right: 46px;
+  margin-top: 7px;
+  display: block;
+  width: 86px;
+}
+form .page .refer input {
+  margin: 0 0 10px 0;
+  height: 35px;
+  width: 124px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  display:block;
+  margin:0 0 5px
+}
+form .page .pref{
+  justify-content: center; 
+  align-items: center
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 100%;
+  top: -30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+form .page .pref label {
+  padding-left: 4px;
+  padding-right: 46px;
+  margin-top: 7px;
+  display: block;
+}
+form .page .prefelabel{
+  padding-left:10px;
+  padding-right:10px;
+  margin-top:7px;
+  display:block;
+  width: 100px;
+}
+form .page .pref input {
+  margin: 0 0 10px 0;
+  height: 35px;
+  width: 90px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  display:block;
+  margin:0 0 5px
+}
+form .page .pref select {
+margin-top: 0px;
+width: 136px;
+height: 38px;
+margin-left: -36px;
+margin-right: 23px;
+border: 1px solid lightgrey;
+border-radius: 5px;
+font-weight: 500;
+padding-left: 10px
+}
+/*form .page input{
+  margin: 0 0 10px 0;
+  height: 35px;
+  width: 200px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}*/
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
